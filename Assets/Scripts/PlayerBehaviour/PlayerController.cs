@@ -91,11 +91,11 @@ public class PlayerController : MonoBehaviour
         Gravity();
         if (isRun)
         {
-            //moveX = Input.GetAxisRaw("Horizontal");
-            //moveY = Input.GetAxisRaw("Vertical");
+            moveX = Input.GetAxisRaw("Horizontal");
+            moveY = Input.GetAxisRaw("Vertical");
 
-            moveX = SwipeManager.instance.inputFloatX;
-            moveY = SwipeManager.instance.inputFloatY;
+            //moveX = SwipeManager.instance.inputFloatX;
+            //moveY = SwipeManager.instance.inputFloatY;
 
             Move();
             MoveToTheSide();
